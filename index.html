@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News App</title>
+</head>
+
+<style>
+
+*{
+  background-color: antiquewhite;
+}
+#navbar{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+#navbar> h1{
+  margin: 10px 0px 10px 10px;
+}
+#navbar> input{
+  width: 60%;
+  height: 35px;
+  background-color: white;
+  border: none;
+  
+}
+  #local_block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    height: 800px;
+  }
+
+  #sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: fit-content;
+    align-items: center;
+
+  }#sidebar>button{
+    width: 90%;
+    margin: 17px 9px 9px 9px;
+    padding: 4px;
+    background-color: white;
+    border: none;
+  }
+
+  #results {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    height: 200px;
+    width: 100%;
+    display: flex;
+  }
+
+  .image {
+    height: 230px;
+    width: 30%;
+    margin: 10px;
+  }
+
+  .boxes {
+    height: 100%;
+    width: 70%;
+  }
+  .boxes>p{
+    margin: 8px;
+    font-size: 12px;
+      }
+  .boxes>h3{
+    margin:  15px;
+  }
+</style>
+
+<body>
+
+
+  <div id="navbar">
+    <!--  
+  <h1 onclick='window.location.href="index.html"'>NEWS</h1>
+  <input type="text" name="" id="search_input"> -->
+
+  </div>
+  <div id="local_block">
+    <div id="sidebar">
+    <button value="in" id="in">india</button>
+    <button value="us" id="us">usa</button>
+    <button value="ch" id="ch">china</button>
+    <button value="uk" id="uk ">UK </button>
+    <button value="nz" id=" nz"> New Zealand</button>
+    
+  </div>
+    <div id="results"></div>
+  </div>
+
+
+
+
+  <!-- Give Navbar with id "navbar"  -->
+  <!-- Navbar will have input with id search_input and a link to home page i.e. index.html -->
+  <!-- Sidebar will have id "sidebar"  -->
+  <!-- Give link to top headlines of countries in sidebar with id as their country codes 
+    india :- in
+    china :- ch
+    usa :- us
+    uk : uk
+    Newzeland :- nz -->
+
+  <!-- Append results inside div with id "results"  -->
+  <!-- News divs will have class "news"  -->
+</body>
+
+</html>
+<script src="./scripts/index.js" type="module"></script>
