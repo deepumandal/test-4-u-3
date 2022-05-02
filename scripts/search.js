@@ -39,7 +39,20 @@ let query = document.querySelector("#search_input").value
 
 let result = document.querySelector(".box")
 results.style.cursor = 'pointer'
-result.addEventListener("click",function(){
-   console.log(this)
+let x = document.querySelector("#results").children
+console.log(x)
+
+for(let number of x){
+number.addEventListener("click",function(){
+   let index = number.id
+console.log(index)
+   let x = JSON.parse(localStorage.getItem("data"))
+//console.log(x[index])
+
+  localStorage.setItem("news",JSON.stringify(x[index]))
+  window.location.href ='news.html'
+
+
 })
+}
 

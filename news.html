@@ -5,13 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detailed news</title>
+    
+
+<style>
+
+  *{
+    background-color: antiquewhite;
+  }
+  #navbar{
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
+  #navbar> h1{
+    margin: 10px 0px 10px 10px;cursor: pointer;
+  }
+  #navbar> input{
+    width: 60%;
+    height: 35px;
+    background-color: white;
+    border: none;
+    
+  }
+    #local_block {
+      width: 100%;
+      height: auto;
+      display: flex;
+      height: 800px;
+    }
+  
+    #sidebar {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      height: fit-content;
+      align-items: center;
+  
+    }#sidebar>button{
+      width: 90%;
+      margin: 17px 9px 9px 9px;
+      padding: 4px;
+      background-color: white;
+      border: none;
+    }
+  
+    #results {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .box {
+      height: 200px;
+      width: 100%;
+      display: flex;
+    }
+  
+    .image {
+      height: 230px;
+      width: 30%;
+      margin: 10px;
+    }
+  
+    .boxes {
+      height: 100%;
+      width: 70%;
+    }
+    .boxes>p{
+      margin: 8px;
+      font-size: 12px;
+        }
+    .boxes>h3{
+      margin:  15px;
+      cursor: pointer;
+    }
+  </style>
   </head>
+
   <body>
     
 <div id="navbar">
  
 
 </div>
+<div id="results"></div>
     <!-- Same navbar with same functionality  -->
     <!-- Append detailed news in div with id "detailed_news"  -->
   </body>

@@ -43,10 +43,12 @@ let sidebar = async (country)=>{
     let append = (data,results)=>{
         //content title urlToImage
         results.innerHTML = null
-            data.forEach((e) => {
-                
+
+            data.forEach((e,i) => {
+           
         let box = document.createElement("div")
         box.setAttribute("class","box")
+        box.setAttribute("id",i)
         
         let img = document.createElement('img')
         img.src = e.urlToImage

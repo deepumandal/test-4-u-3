@@ -73,6 +73,8 @@ console.log(country)
    sidebar1("in")
 
 
-document.querySelector(".image").style.cursur = 'pointer'
 
 
+
+let result = document.querySelector(".box")
+results.style.cursor = 'pointer'
